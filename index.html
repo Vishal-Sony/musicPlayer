@@ -9,6 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>music player</title>
   </head>
   <body>
@@ -144,6 +146,7 @@
         mask="url(#path-1-outside-1)"
       />
     </svg>
+
     <div class="music-container">
       <div class="music-info">
         <h4 id="title">FLAWS</h4>
@@ -168,6 +171,19 @@
         </button>
       </div>
     </div>
+    <!-- <form id="Form">
+      song name: <input type="text" name="query" placeholder="type song here" />
+      <button>submit</button>
+    </form> -->
+    <div>
+      <form action="" id="Form">
+        <input type="search" name="query" pattern=".*\S.*" required />
+        <button class="search-btn" type="submit">
+          <span>Search</span>
+        </button>
+      </form>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
